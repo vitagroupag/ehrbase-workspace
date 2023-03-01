@@ -22,7 +22,6 @@ RUN curl -o /usr/local/bin/docker-compose -fsSL https://github.com/docker/compos
     rm /usr/local/lib/docker/cli-plugins/docker-compose || true && \
     ln -s /usr/local/bin/docker-compose /usr/local/lib/docker/cli-plugins/docker-compose
 
-
 # https://github.com/wagoodman/dive
 RUN curl -o /tmp/dive.deb -fsSL https://github.com/wagoodman/dive/releases/download/v0.10.0/dive_0.10.0_linux_amd64.deb \
     && apt install /tmp/dive.deb \

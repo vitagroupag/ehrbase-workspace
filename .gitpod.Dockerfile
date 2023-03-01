@@ -1,4 +1,4 @@
-ARG base
+ARG base=ubuntu:18.04
 FROM ${base}
 
 USER root
